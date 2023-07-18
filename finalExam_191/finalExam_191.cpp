@@ -84,8 +84,7 @@ bool listEmpty() {
 
 void traverse() {
 	if (listEmpty()) {
-		cout << "List Kosong" << endl;
-		system("pause");
+		cout << "urutkan sesuai jumlah" << endl;
 		system("cls");
 		return;
 	}
@@ -101,8 +100,7 @@ void traverse() {
 
 void searchData() {
 	if (listEmpty()) {
-		cout << "List Kosong" << endl;
-		system("Pause");
+		cout << "Urutkan sesuai jumlah " << endl;
 		system("cls");
 		return;
 	}
@@ -141,14 +139,12 @@ int main() {
 			case 1:
 				addNode();
 				cout << "Produk Berhasil Ditambahkan" << endl;
-				system("pause");
 				system("cls");
 				break;
 			case 2:
 				if (listEmpty())
 				{
-					cout << "List Kosong" << endl;
-					system("pause");
+					cout << "Urutkan jumlah produk" << endl;
 					system("cls");
 					break;
 				}
@@ -156,8 +152,7 @@ int main() {
 				cout << "Tambahkan Produk : ";
 				cin >> Nama;
 				if ((Nama)) {
-					cout << "Produk : " << Nama << "berhasil dihapus" << endl;
-					system("pause");
+					cout << "Produk : " << Nama << "tampilkan semua produk " << endl;
 					system("cls");
 				}
 				else
@@ -182,3 +177,10 @@ int main() {
 	} while (pilihan != 4);
 }
 
+// 2. single linklist, ada beberapa yang di delete 
+// 3. pencarian sebuah data dari yang terkecil hingga terbesar
+		// di pindahkan dari ukuran yang terbesar sebelah kanan dan yang terkecil di urutkan dari sebelah kiri
+// 4. alogaritma stack adalah situasi dimana programnya terjebak dalam kesalahan yang membuat tidak bisa di tampilkan hasilnya
+      //misalnya variabelnya yang salah
+// 5. a. 4 kedalaman 
+      // b. inorder karena sturktur dan bentuknya seperti akar pohon 
